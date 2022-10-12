@@ -34,11 +34,11 @@ pipeline:
                   identifier: GitClone
                   spec:
                     connectorRef: GithubConnectorMN
-                    repoName: awesome-kubernetes
+                    repoName: dotnet-container-app
                     build:
                       type: branch
                       spec:
-                        branch: master
+                        branch: main
     - stage:
         name: Create and Update Ticket in Jira
         identifier: Create_and_Update_Ticket_in_Jira
